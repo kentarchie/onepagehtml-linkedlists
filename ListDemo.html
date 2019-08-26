@@ -1,0 +1,132 @@
+<html>
+<head>
+	<title>Linked List Demo</title>
+	<meta charset="UTF-8">
+	<meta name='author'      content='Kent Archie' />
+	<meta name='copyright'   content='Copyright Kent Archie 2019' />
+   <meta name='description' content='Demonstration of linked list implementation and use' />
+	
+	<style type='text/css'>
+		* {
+			margin: 0;
+		}
+
+		html, body {
+    		padding:0;
+    		height: 100%;
+		}
+
+		body {
+			display: flex;
+    		flex-direction: column;
+		}
+
+		.center { 
+			width:35%; 
+			margin-left: auto; 
+			margin-right:auto;
+		}
+
+		footer {
+    		border:1px solid green;
+    		width:100%;
+    		height:1em;
+		}
+
+		header {
+    		background:#5ee;
+		}
+
+		.copyright  {
+    		font-size :  small;
+		}
+
+		.content {
+    		padding:10px;
+    		padding-bottom:1em; /* Height of the footer element */
+			height:100%;
+		}
+
+		.lessonBlock {
+			width:80%;
+			padding-left: 100px;
+			background-color:beige;
+			position:relative
+		}
+		
+		.notesBlock {
+			width:100%;
+			background-color:lightgreen;
+		}
+		
+		.demoBlock {
+			width:100%;
+			position:relative;
+		}
+		
+		.controlBlock {
+			width:30%;
+			background-color:yellow;
+			float:left;
+		}
+		
+		.displayBlock {
+			width:50%;
+			background-color:lightblue;
+			float:right;
+		}
+	
+	</style>
+
+	<script type='text/javascript'>
+		document.addEventListener("DOMContentLoaded", function() {
+   		var el = document.querySelector('.copyright span');
+			el.innerHTML = new Date().getFullYear();
+		});	
+	</script>
+
+</head>
+	<body>
+	   <header>
+			<h1 class='center'>Linked List Demo</h1>
+		</header>  <!-- header -->
+
+		<div class='content'>
+
+			<div class='lessonBlock'>
+				<div class='notesBlock'>
+				something about what we are teaching here
+				</div> <!-- notesBlock -->
+				<div class='demoBlock'>
+					<div class='controlBlock'>
+						any relevant buttons
+					</div> <!-- controllock -->
+					<div class='displayBlock'>
+					what the list looks like now
+					</div> <!-- displaylock -->
+				</div> <!-- demoBlock -->
+			</div> <!-- lessonBlock -->
+
+		</div>  <!--content -->
+
+   	<footer>
+			<div class='copyright'>Copyright Kent Archie<span>year</span></div>
+   	</footer>
+	</body>
+</html>
+<!--
+	Licensed under the MIT license - http://opensource.org/licenses/MIT
+	Copyright (c) 2019 Kent Archie
+-->
+			<!--
+			<div class='lessonBlock'>
+				<div class='notesBlock'>
+				</div> <!-- notesBlock -->
+				<div class='demoBlock'>
+					<div class='controlBlock'>
+					</div> <!-- controllock -->
+					<div class='displayBlock'>
+					</div> <!-- displaylock -->
+				</div> <!-- demoBlock -->
+			</div> <!-- lessonBlock -->
+			-->
