@@ -45,35 +45,47 @@
     		padding:10px;
     		padding-bottom:1em; /* Height of the footer element */
 			height:100%;
+			width:100%;
+			display:flex;
+			flex-direction:row;
 		}
 
 		.lessonBlock {
-			width:80%;
-			padding-left: 100px;
+			order:1;
 			background-color:beige;
-			position:relative
+			height:500px;
+			width:40%;
+			border:1px solid blue;
+			overflow:auto;
+			padding:10px;
+		}
+
+		.content> div:first-child {
+			margin-right: 20px;
+		}	
+
+		.lessonTitle {
+			padding-top: 20px;
 		}
 		
 		.notesBlock {
-			width:100%;
 			background-color:lightgreen;
 		}
 		
 		.demoBlock {
-			width:100%;
-			position:relative;
+			background-color:yellow;
 		}
 		
 		.controlBlock {
-			width:30%;
 			background-color:yellow;
-			float:left;
 		}
 		
 		.displayBlock {
-			width:50%;
+			order:2;
 			background-color:lightblue;
-			float:right;
+			height:500px;
+			width:50%;
+			border:1px solid darkblue;
 		}
 	
 	</style>
@@ -94,18 +106,58 @@
 		<div class='content'>
 
 			<div class='lessonBlock'>
+
+				<div class='lessonTitle'>
+					lesson 1: Introduction
+				</div> <!-- lessonTitle -->
 				<div class='notesBlock'>
-				something about what we are teaching here
+					something about what we are teaching here.
+					Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 				</div> <!-- notesBlock -->
 				<div class='demoBlock'>
 					<div class='controlBlock'>
 						any relevant buttons
-					</div> <!-- controllock -->
-					<div class='displayBlock'>
-					what the list looks like now
-					</div> <!-- displaylock -->
+					</div> <!-- controlBlock -->
+					<div class='codeBlock'>
+						code examples go here for this lesson
+					</div> <!-- codeBlock -->
+				</div> <!-- demoBlock -->
+
+				<div class='lessonTitle'>
+					lesson 2: Add element to end
+				</div> <!-- lessonTitle -->
+				<div class='notesBlock'>
+					describe how to add an element to the end.
+					here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+				</div> <!-- notesBlock -->
+				<div class='demoBlock'>
+					<div class='controlBlock'>
+						any relevant buttons
+					</div> <!-- controlBlock -->
+					<div class='codeBlock'>
+						code examples go here for this lesson
+					</div> <!-- codeBlock -->
+				</div> <!-- demoBlock -->
+
+				<div class='lessonTitle'>
+					lesson 3: Add element to front
+				</div> <!-- lessonTitle -->
+				<div class='notesBlock'>
+					describe how to add an element to the front.
+				</div> <!-- notesBlock -->
+				<div class='demoBlock'>
+					<div class='controlBlock'>
+						any relevant buttons
+					</div> <!-- controlBlock -->
+					<div class='codeBlock'>
+						code examples go here for this lesson
+					</div> <!-- codeBlock -->
 				</div> <!-- demoBlock -->
 			</div> <!-- lessonBlock -->
+
+			<div class='displayBlock'>
+					what the list looks like now
+			</div> <!-- displaylock -->
 
 		</div>  <!--content -->
 
@@ -118,15 +170,3 @@
 	Licensed under the MIT license - http://opensource.org/licenses/MIT
 	Copyright (c) 2019 Kent Archie
 -->
-			<!--
-			<div class='lessonBlock'>
-				<div class='notesBlock'>
-				</div> <!-- notesBlock -->
-				<div class='demoBlock'>
-					<div class='controlBlock'>
-					</div> <!-- controllock -->
-					<div class='displayBlock'>
-					</div> <!-- displaylock -->
-				</div> <!-- demoBlock -->
-			</div> <!-- lessonBlock -->
-			-->
